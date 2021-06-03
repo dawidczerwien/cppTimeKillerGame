@@ -136,7 +136,7 @@ void Game::render(){
 void Game::updateMousePosition() {
     // read mouse postion reference to game window
     this->mousePosition = sf::Mouse::getPosition(*this->window);
-    // convert Vector2i to Vector
+    // convert Vector2i to Vector2f
     this->mouseView = this->window->mapPixelToCoords(this->mousePosition);
 }
 
